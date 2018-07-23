@@ -1,0 +1,28 @@
+[
+  {
+    "creationDate": 1500391713951,
+    "description": "",
+    "id": "Redirect_1500391713951",
+    "name": "xat ip2",
+    "pairs": [
+      {
+        "destination": "http://localhost:10101/ip2.php",
+        "source": {
+          "key": "Url",
+          "operator": "Matches",
+          "value": "/^https?:\\/\\/xat\\.com\\/web_gear\\/chat\\/ip2\\.php/i"
+        }
+      },
+      {
+        "destination": "https://lejon.000webhostapp.com/crossdomains.xml",
+        "source": {
+          "key": "Url",
+          "operator": "Contains",
+          "value": "/^https?:\\/\\/xat\\.com\\/crossdomain\\.xml/i"
+        }
+      }
+    ],
+    "ruleType": "Redirect",
+    "status": "Active"
+  }
+]
